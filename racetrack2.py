@@ -146,7 +146,7 @@ class RacetrackEnv(gym.Env):
 
 gym.envs.registration.register(
     id='Racetrack-v0',
-    entry_point=lambda track, noisy: RacetrackEnv(f"racetrack/{track}.csv", noisy),
+    entry_point=lambda track, noisy: RacetrackEnv(f"racetrack2/{track}.csv", noisy),
     nondeterministic=True,
     kwargs={'track': 'test', 'noisy': True}
 )
